@@ -250,7 +250,13 @@ def api_register_user(*, email, name, passwd):
         raise APIError('register:failed', 'email', 'Email is already in use.')
     uid = next_id()
     sha1_passwd = '%s:%s' % (uid, passwd)
-    user = User(id=uid, name=name.strip(), email=email, passwd=hashlib.sha1(sha1_passwd.encode('utf-8')).hexdigest(), image='https://i.ytimg.com/vi/opKg3fyqWt4/hqdefault.jpg')
+    user = User(
+      id=uid,
+      name=name.strip(),
+      email=email,
+      passwd=hashlib.sha1(sha1_passwd.encode('utf-8')).hexdigest(),
+      image='https://i.ytimg.com/vi/opKg3fyqWt4/hqdefault.jpg'
+    )
     yield from user.save()
     # make session cookie:
     r = web.Response()
