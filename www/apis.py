@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'Haiyang Zhao'
+__author__ = 'haiyang zhao'
 
 '''
 JSON API definition.
