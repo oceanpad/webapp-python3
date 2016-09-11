@@ -22,6 +22,11 @@ $ pip3 install jinja2
 $ pip3 install aiomysql
 ```
 
+### 6. [watchdog](https://github.com/gorakhargosh/watchdog)(Python library and shell utilities to monitor filesystem events. )
+```
+$ pip3 install aiomysql
+```
+
 
 ## Dir Tree
 ```
