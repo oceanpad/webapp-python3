@@ -109,6 +109,12 @@ def register():
         '__template__': 'register.html'
     }
 
+@get('/aboutme')
+def register():
+    return {
+        '__template__': 'aboutme.html'
+    }
+
 @get('/signin')
 def signin():
     return {
