@@ -110,7 +110,7 @@ def register():
     }
 
 @get('/aboutme')
-def register():
+def aboutme():
     return {
         '__template__': 'aboutme.html'
     }
